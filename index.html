@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Nate's Real Estate Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
 </head>
 <body>
 
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-      </div>
-      
-      <!-- Tab content -->
-      <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-      </div>
-      
-      <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
 
-      <script>
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-        </script>
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
 
-<h2>h2<!--Insert Picture and search bar for your area--></h2>
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
 
-<h3>h3<!--Insert Area Name and brief text descibing what it shows--></h3>
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
 
-<h4>h4<!--Updating Pictures of property in their area--></h4>
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
 
-<h5>h5<!--Box asking if you want more homes--></h5>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
 
-<h6>h6<!--Buy a home? rent a home? sell a home?--></h6>
-
-<h7>h7<!--Insert Area Name and brief text describing what it shows--></h7>
-
-<h8>h8<!--Updating pictures of property in their area--></h8>
-
-<h9>h9<!--Bottom text with address, company, phone, email--></h9>
-
-<h10>h10<!--Insert Bottom Picture--></h10>
-
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
 </body>
-</html>
+</html> 
