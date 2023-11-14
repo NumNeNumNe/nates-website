@@ -32,7 +32,7 @@ body, html {
   height: 100%;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
+#Home {background-color: orange;}
+#News {background-color: purple;}
 #Contact {background-color: blue;}
 #About {background-color: orange;}
