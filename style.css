@@ -21,7 +21,7 @@ body, html {
 }
 
 .tablink:hover {
-  background-color: lightgray;
+  color: blue;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -31,7 +31,10 @@ body, html {
   padding: 100px 20px;
   height: 100%;
 }
-
+p {
+  background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.utahrealestate.com%2Fsite%2Fimg%2Fcommon%2Fmarquee-08.jpg&tbnid=iPYqxNti6tqSiM&vet=12ahUKEwjO0e2Lk8WCAxW8CUQIHRMaAPcQMygCegQIARBV..i&imgrefurl=https%3A%2F%2Fwww.utahrealestate.com%2F&docid=X-JFYm5cp3_SoM&w=2048&h=830&q=utah%20homes%20for%20sale&ved=2ahUKEwjO0e2Lk8WCAxW8CUQIHRMaAPcQMygCegQIARBV');
+}
+/*
 #Buy {background-color: red;}
 #Sell {background-color: purple;}
 #Rent {background-color: purple;}
@@ -42,3 +45,4 @@ body, html {
 #Advertise {background-color: blue;}
 #Help {background-color: blue;}
 #Sign-In {background-color: orange;}
+*/

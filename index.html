@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <title>Nates Site</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 
-<button class="tablink" onclick="openPage('Buy', this, 'red')"id="defaultOpen">Buy</button>
-<button class="tablink" onclick="openPage('Sell', this, 'green')">Sell</button>
-<button class="tablink" onclick="openPage('Rent', this, 'green')">Rent</button>
-<button class="tablink" onclick="openPage('Home-Loans', this, 'green')">Home Loans</button>
-<button class="tablink" onclick="openPage('Agent-Finder', this, 'green')">Agent Finder</button>
-<button class="tablink" onclick="openPage('Nates-Site', this, 'green')">Nate's Site</button>
-<button class="tablink" onclick="openPage('Manage-Rentals', this, 'green')">Manage Rentals</button>
-<button class="tablink" onclick="openPage('Advertise', this, 'blue')">Advertise</button>
-<button class="tablink" onclick="openPage('Help', this, 'orange')">Help</button>
-<button class="tablink" onclick="openPage('Sign-In', this, 'blue')">Sign-In</button>
+    <button class="tablink" onclick="openPage('Buy', this, 'gray')" id="defaultOpen">Buy</button>
+    <button class="tablink" onclick="openPage('Sell', this, 'gray')">Sell</button>
+    <button class="tablink" onclick="openPage('Rent', this, 'gray')">Rent</button>
+    <button class="tablink" onclick="openPage('Home-Loans', this, 'gray')">Home Loans</button>
+    <button class="tablink" onclick="openPage('Agent-Finder', this, 'gray')">Agent Finder</button>
+    <button class="tablink" onclick="openPage('Nates-Site', this, 'gray')">Nate's Site</button>
+    <button class="tablink" onclick="openPage('Manage-Rentals', this, 'gray')">Manage Rentals</button>
+    <button class="tablink" onclick="openPage('Advertise', this, 'gray')">Advertise</button>
+    <button class="tablink" onclick="openPage('Help', this, 'gray')">Help</button>
+    <button class="tablink" onclick="openPage('Sign-In', this, 'gray')">Sign-In</button>
 
-<div id="Buy" class="tabcontent">
-    <h3>Buy</h3>
-    <p>This is where you buy</p>
-</div>
+    <p style="background-image: url(https://unsplash.com/photos/a-large-body-of-water-with-mountains-in-the-background-brq3YUxtrB0)";>
+111111111111111111111111111111111111111111111111
+    </p>
+    <!--
+    <div id="Buy" class="tabcontent">
+        <h3>Buy</h3>
+        <p>This is where you buy</p>
+    </div>
 
-<div id="Sell" class="tabcontent">
-    <h3>Sell</h3>
-    <p>This is where you sell</p> 
-</div>
+    <div id="Sell" class="tabcontent">
+        <h3>Sell</h3>
+        <p>This is where you sell</p>
+    </div>
 
-<div id="Rent" class="tabcontent">
-    <h3>Rent</h3>
-    <p>This is where find rentals</p> 
-  </div>
+    <div id="Rent" class="tabcontent">
+        <h3>Rent</h3>
+        <p>This is where find rentals</p>
+    </div>
 
-<div id="Home-Loans" class="tabcontent">
-    <h3>Home Loans</h3>
-    <p>What home loans can you qualify for</p> 
-</div>
+    <div id="Home-Loans" class="tabcontent">
+        <h3>Home Loans</h3>
+        <p>What home loans can you qualify for</p>
+    </div>
 
-<div id="Agent-Finder" class="tabcontent">
-    <h3>Agent Finder</h3>
-    <p>This is where you find an agent</p> 
-</div>
+    <div id="Agent-Finder" class="tabcontent">
+        <h3>Agent Finder</h3>
+        <p>This is where you find an agent</p>
+    </div>
 
-<div id="Nates-Site" class="tabcontent">
-    <h3>Nate's Site</h3>
-    <p>This is Nate's Site</p> 
-</div>
+    <div id="Nates-Site" class="tabcontent">
+        <h3>Nate's Site</h3>
+        <p>This is Nate's Site</p>
+    </div>
 
-<div id="Manage-Rentals" class="tabcontent">
-    <h3>Manage Rentals</h3>
-    <p>This is where you manage rentals</p> 
-</div>
+    <div id="Manage-Rentals" class="tabcontent">
+        <h3>Manage Rentals</h3>
+        <p>This is where you manage rentals</p>
+    </div>
 
-<div id="Advertise" class="tabcontent">
-    <h3>Advertise</h3>
-    <p>This is where you advertise</p> 
-</div>
+    <div id="Advertise" class="tabcontent">
+        <h3>Advertise</h3>
+        <p>This is where you advertise</p>
+    </div>
 
-<div id="Help" class="tabcontent">
-    <h3>Help</h3>
-    <p>This is where you go for help</p>
-</div>
+    <div id="Help" class="tabcontent">
+        <h3>Help</h3>
+        <p>This is where you go for help</p>
+    </div>
 
-<div id="Sign-In" class="tabcontent">
-    <h3>Sign In</h3>
-    <p>This is where you sign in</p>
-</div>
+    <div id="Sign-In" class="tabcontent">
+        <h3>Sign In</h3>
+        <p>This is where you sign in</p>
+    </div>
+-->
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
 
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-   
 </body>
-</html> 
+
+</html>
