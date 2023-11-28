@@ -18,6 +18,9 @@ body, html {
     padding: 30px 0px;
     font-size: 17px;
     width: 33.33%;
+    /*
+    position: absolute;
+    */
   }
 
 .tablink:hover {
@@ -45,9 +48,30 @@ body, html {
 */
 .img {
   background-image: url("House Image - 5.png");
+  /*
   background-position: center center;
+  */
+
+  position: relative;
+
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+.searchcontainer {
+  position: absolute;
+  width: 100%;
+}
+
+.search input[type=text] {
+  border: 2px solid lightskyblue;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  /*
+  position: absolute;
+  */
+  
 }
