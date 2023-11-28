@@ -3,8 +3,25 @@
 /* Set height of body and the document to 100% */
 body, html {
   height: 100%;
+  width: 100%;
   margin: 0;
   font-family: Arial;
+}
+
+.navbarcontainer {
+  /*
+  position: absolute;
+  */
+  
+  position: relative;
+  
+  width: 100%;
+  height: 8.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Style tab links */
@@ -15,12 +32,10 @@ body, html {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 30px 0px;
+    padding: 0px 0px;
     font-size: 17px;
-    width: 33.33%;
-    /*
-    position: absolute;
-    */
+    height: 100%;/*75px*/
+    width: 100%;
   }
 
 .tablink:hover {
@@ -49,29 +64,36 @@ body, html {
 .img {
   background-image: url("House Image - 5.png");
   /*
+  need to fix image so it is long and stretchy
+  so when people shrink page size it shrinks the non-necessary border
+  need similar to zillow picture 
   background-position: center center;
   */
-
   position: relative;
-
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 91.5%;
 }
 
 .searchcontainer {
+
+  position: relative;
+/*
   position: absolute;
+  */
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .search input[type=text] {
   border: 2px solid lightskyblue;
   text-align: center;
-  width: 50%;
+  width: 750px;
   height: 50px;
-  /*
-  position: absolute;
-  */
-  
 }
