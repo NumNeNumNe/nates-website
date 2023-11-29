@@ -22,16 +22,7 @@
     <button class="tablink" onclick="openPage('Advertise', this, 'gray')">Advertise</button>
     <button class="tablink" onclick="openPage('Help', this, 'gray')">Help</button>
     <button class="tablink" onclick="openPage('Sign-In', this, 'gray')">Sign-In</button>
-    -->
-    <div class="img">
-        <div class="searchcontainer">
-            <div class="search">
-                <input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code">
-            </div>
-        </div>
-    </div>
-
-    <!--
+    
     <div id="Buy" class="tabcontent">
         <h3>Buy</h3>
         <p>This is where you buy</p>
@@ -81,24 +72,19 @@
         <h3>Sign In</h3>
         <p>This is where you sign in</p>
     </div>
--->
-    <script>
-        function openPage(pageName, elmnt, color) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-            }
-            document.getElementById(pageName).style.display = "block";
-            elmnt.style.backgroundColor = color;
-        }
+    -->
+    
+    <div class="img">
+        <form class="searchform" action="/action_page.php">
+            <div class="searchcontainer">
+                <div class="search">
+                    <input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code">
+                    <button class="submit" onclick="openPage('Results', this, 'gray')">🔍</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
+    
 </body>
 </html>
