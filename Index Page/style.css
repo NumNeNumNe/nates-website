@@ -21,35 +21,9 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   text-align: center;
 }
 
-.tablink {
-  background-color: lightblue;
-  color: black;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 0px 0px;
-  font-size: 17px;
-  height: 100%;
-  width: 100%;
-}
 
-.tablink:hover {
-  color: blue;
-}
 
-/*
-#Buy {background-color: red;}
-#Sell {background-color: purple;}
-#Rent {background-color: purple;}
-#Home-Loans {background-color: purple;}
-#Agent-Finder {background-color: purple;}
-#Nates-Site {background-color: purple;}
-#Manage-Rentals {background-color: purple;}
-#Advertise {background-color: blue;}
-#Help {background-color: blue;}
-#Sign-In {background-color: orange;}
-*/
+
 /*
 Image Area (Includes Image, Searchbar and Button inside searchbar)
 --------------------------------------------------------------------
@@ -126,6 +100,7 @@ Image Area (Includes Image, Searchbar and Button inside searchbar)
   background-color: white;
   height: 41.5%;
   width: 100%;
+  padding-left: 40px;
 }
 
 .trendingtopbar {
@@ -134,10 +109,11 @@ Image Area (Includes Image, Searchbar and Button inside searchbar)
 
 .trendingwords {
   font-size: 20px;
+  margin-bottom: -15px;
 }
 
 .trendingsubwords {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .trendinghomes {
