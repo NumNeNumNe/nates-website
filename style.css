@@ -31,14 +31,120 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   text-align: center;
 }
 
-.navbarmiddlelogo {
-  text-align: center;
-}
-
 .navbarright {
   width: 100%;
   height: 100%;
   text-align: right;
+}
+
+.navbarleftbuy {
+  width: 16.6%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgoldenrodyellow;
+  float: center;
+  border: none;
+  font-size: 15px;
+}
+
+.navbarleftrent {
+  width: 16.6%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgreen;
+  float: center;
+  border: none;
+  font-size: 15px;
+}
+
+.navbarleftsell {
+  width: 16.6%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgoldenrodyellow;
+  float: center;
+  border: none;
+  font-size: 15px;
+}
+
+.navbarlefthome-loans {
+  width: 16.6%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgreen;
+  float: center;
+  border: none;
+  font-size: 15px;
+}
+
+.navbarleftagent-finder {
+  width: 16.6%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgoldenrodyellow;
+  float: center;
+  border: none;
+  font-size: 15px;
+}
+
+.navbarmiddlelogo {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightblue;
+  float: center;
+  border: none;
+  font-size: 25px;
+}
+
+.navbarrightmanage-rentals {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgoldenrodyellow;
+  float: center;
+  border: none;
+  font-size: 15px;
+}
+
+.navbarrightadvertise {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgreen;
+  float: center;
+  border: none;
+  font-size: 15px;
+}
+
+.navbarrighthelp {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgoldenrodyellow;
+  float: center;
+  border: none;
+  font-size: 15px;
+}
+
+.navbarrightsign-in {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightgreen;
+  float: center;
+  border: none;
+  font-size: 15px;
 }
 
 /*
@@ -97,7 +203,7 @@ Image Area (Includes Image, Searchbar and Button inside searchbar)
   border: none;
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
-  font-size: 17;
+  font-size: 20px;
   width: 50px;
   height: 75px;
   cursor: pointer;
