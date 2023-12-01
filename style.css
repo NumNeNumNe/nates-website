@@ -38,7 +38,7 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
 }
 
 .navbarleftbuy {
-  width: 16.6%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -46,10 +46,11 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  overflow: hidden;
 }
 
 .navbarleftrent {
-  width: 16.6%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -57,10 +58,11 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  overflow: hidden;
 }
 
 .navbarleftsell {
-  width: 16.6%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -68,10 +70,11 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  overflow: hidden;
 }
 
 .navbarlefthome-loans {
-  width: 16.6%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -79,10 +82,12 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .navbarleftagent-finder {
-  width: 16.6%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -90,6 +95,8 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .navbarmiddlelogo {
@@ -104,7 +111,7 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
 }
 
 .navbarrightmanage-rentals {
-  width: 25%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -112,10 +119,12 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .navbarrightadvertise {
-  width: 25%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -123,10 +132,11 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  overflow: hidden;
 }
 
 .navbarrighthelp {
-  width: 15%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -134,10 +144,11 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  overflow: hidden;
 }
 
 .navbarrightsign-in {
-  width: 25%;
+  width: auto;
   height: 100%;
   text-align: center;
   cursor: pointer;
@@ -145,6 +156,8 @@ Navigation Bar (Includes Navbar Area, 3 Buttons)
   float: center;
   border: none;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /*
